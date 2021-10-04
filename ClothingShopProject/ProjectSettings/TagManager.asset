@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Sign1
+  - Sign2
+  - Sign3
+  - Npc1
+  - Npc2
+  - Npc3
+  - House
   layers:
   - Default
   - TransparentFX
@@ -49,4 +56,7 @@ TagManager:
     locked: 0
   - name: Props
     uniqueID: 1392960559
+    locked: 0
+  - name: Events
+    uniqueID: 3058212647
     locked: 0
