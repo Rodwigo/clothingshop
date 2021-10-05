@@ -45,7 +45,6 @@ public class PlayerController : MonoBehaviour
                 if(canMove == true)
                 {
                     canMove = false;
-                    Debug.Log("Sign!");
                     menu1.SetActive(true);
                 }
                 else
@@ -56,12 +55,30 @@ public class PlayerController : MonoBehaviour
             }
             if (touchSign2)
             {
-                Debug.Log("Sign!");
+                if (canMove == true)
+                {
+                    canMove = false;
+                    menu2.SetActive(true);
+                }
+                else
+                {
+                    canMove = true;
+                    menu2.SetActive(false);
+                }
 
             }
             if (touchSign3)
             {
-                Debug.Log("Sign!");
+                if (canMove == true)
+                {
+                    canMove = false;
+                    menu3.SetActive(true);
+                }
+                else
+                {
+                    canMove = true;
+                    menu3.SetActive(false);
+                }
 
             }
             if (touchHouse)
@@ -70,7 +87,16 @@ public class PlayerController : MonoBehaviour
             }
             if (touchNPC1)
             {
-                Debug.Log("Npc!");
+                if (canMove == true)
+                {
+                    canMove = false;
+                    menu4.SetActive(true);
+                }
+                else
+                {
+                    canMove = true;
+                    menu4.SetActive(false);
+                }
             }
             if (touchNPC2)
             {
@@ -85,7 +111,13 @@ public class PlayerController : MonoBehaviour
  
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        if (!canMove)
+        {
+            return;
+        }else
+        {
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        }    
     }
 
     void Movement()
