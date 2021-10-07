@@ -83,7 +83,16 @@ public class PlayerController : MonoBehaviour
             }
             if (touchHouse)
             {
-                Debug.Log("House!");
+                if (canMove == true)
+                {
+                    canMove = false;
+                    menu7.SetActive(true);
+                }
+                else
+                {
+                    canMove = true;
+                    menu7.SetActive(false);
+                }
             }
             if (touchNPC1)
             {
