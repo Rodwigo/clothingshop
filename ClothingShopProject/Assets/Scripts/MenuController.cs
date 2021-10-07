@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    public GameObject tutorialTab;
 
     public void GoToScene(int index)
     {

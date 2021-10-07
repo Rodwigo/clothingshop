@@ -46,11 +46,13 @@ public class PlayerController : MonoBehaviour
                 {
                     canMove = false;
                     menu1.SetActive(true);
+                    SoundManager.PlaySound("sfx1");
                 }
                 else
                 {
                     canMove = true;
                     menu1.SetActive(false);
+                    SoundManager.PlaySound("sfx3");
                 }            
             }
             if (touchSign2)
@@ -59,11 +61,13 @@ public class PlayerController : MonoBehaviour
                 {
                     canMove = false;
                     menu2.SetActive(true);
+                    SoundManager.PlaySound("sfx1");
                 }
                 else
                 {
                     canMove = true;
                     menu2.SetActive(false);
+                    SoundManager.PlaySound("sfx3");
                 }
 
             }
@@ -73,11 +77,13 @@ public class PlayerController : MonoBehaviour
                 {
                     canMove = false;
                     menu3.SetActive(true);
+                    SoundManager.PlaySound("sfx1");
                 }
                 else
                 {
                     canMove = true;
                     menu3.SetActive(false);
+                    SoundManager.PlaySound("sfx3");
                 }
 
             }
@@ -87,11 +93,13 @@ public class PlayerController : MonoBehaviour
                 {
                     canMove = false;
                     menu7.SetActive(true);
+                    SoundManager.PlaySound("sfx1");
                 }
                 else
                 {
                     canMove = true;
                     menu7.SetActive(false);
+                    SoundManager.PlaySound("sfx3");
                 }
             }
             if (touchNPC1)
@@ -100,11 +108,13 @@ public class PlayerController : MonoBehaviour
                 {
                     canMove = false;
                     menu4.SetActive(true);
+                    SoundManager.PlaySound("sfx1");
                 }
                 else
                 {
                     canMove = true;
                     menu4.SetActive(false);
+                    SoundManager.PlaySound("sfx3");
                 }
             }
             if (touchNPC2)
@@ -113,11 +123,13 @@ public class PlayerController : MonoBehaviour
                 {
                     canMove = false;
                     menu5.SetActive(true);
+                    SoundManager.PlaySound("sfx1");
                 }
                 else
                 {
                     canMove = true;
                     menu5.SetActive(false);
+                    SoundManager.PlaySound("sfx3");
                 }
             }
             if (touchNPC3)
@@ -126,11 +138,13 @@ public class PlayerController : MonoBehaviour
                 {
                     canMove = false;
                     menu6.SetActive(true);
+                    SoundManager.PlaySound("sfx1");
                 }
                 else
                 {
                     canMove = true;
                     menu6.SetActive(false);
+                    SoundManager.PlaySound("sfx3");
                 }
             }
         }

@@ -58,11 +58,13 @@ public class GameController : MonoBehaviour
         var coinsInt = int.Parse(coins.text);
         if(coinsInt < quant)
         {
+            SoundManager.PlaySound("sfx2");
             Debug.Log("Not enough Money!");
             return false;
         }
         coinsInt -= quant;
         coins.text = coinsInt.ToString();
+        SoundManager.PlaySound("sfx5");
         return true;
     }
     void GoToScene(int index)
@@ -143,6 +145,7 @@ public class GameController : MonoBehaviour
      public void NPC1SocialSell()
     {
         SellClothes("social", 30);
+        SoundManager.PlaySound("sfx5");
         if (usingSocial)
         {
             DefaultSkin();
@@ -151,6 +154,7 @@ public class GameController : MonoBehaviour
     public void NPC1CasualSell()
     {
         SellClothes("casual", 20);
+        SoundManager.PlaySound("sfx5");
         if (usingCasual)
         {
             DefaultSkin();
@@ -159,6 +163,7 @@ public class GameController : MonoBehaviour
     public void NPC1ExoticSell()
     {
         SellClothes("exotic", 100);
+        SoundManager.PlaySound("sfx5");
         if (usingExotic)
         {
             DefaultSkin();
@@ -167,6 +172,7 @@ public class GameController : MonoBehaviour
     public void NPC2SocialSell()
     {
         SellClothes("social", 50);
+        SoundManager.PlaySound("sfx5");
         if (usingSocial)
         {
             DefaultSkin();
@@ -175,6 +181,7 @@ public class GameController : MonoBehaviour
     public void NPC2CasualSell()
     {
         SellClothes("casual", 40);
+        SoundManager.PlaySound("sfx5");
         if (usingCasual)
         {
             DefaultSkin();
@@ -183,6 +190,7 @@ public class GameController : MonoBehaviour
     public void NPC2ExoticSell()
     {
         SellClothes("exotic", 10);
+        SoundManager.PlaySound("sfx5");
         if (usingExotic)
         {
             DefaultSkin();
@@ -191,6 +199,7 @@ public class GameController : MonoBehaviour
     public void NPC3SocialSell()
     {
         SellClothes("social", 10);
+        SoundManager.PlaySound("sfx5");
         if (usingSocial)
         {
             DefaultSkin();
@@ -199,6 +208,7 @@ public class GameController : MonoBehaviour
     public void NPC3CasualSell()
     {
         SellClothes("casual", 10);
+        SoundManager.PlaySound("sfx5");
         if (usingCasual)
         {
             DefaultSkin();
@@ -207,6 +217,7 @@ public class GameController : MonoBehaviour
     public void NPC3ExoticSell()
     {
         SellClothes("exotic", 60);
+        SoundManager.PlaySound("sfx5");
         if (usingExotic)
         {
             DefaultSkin();
