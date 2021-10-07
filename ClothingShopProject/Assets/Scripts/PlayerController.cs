@@ -109,11 +109,29 @@ public class PlayerController : MonoBehaviour
             }
             if (touchNPC2)
             {
-                Debug.Log("Npc!");
+                if (canMove == true)
+                {
+                    canMove = false;
+                    menu5.SetActive(true);
+                }
+                else
+                {
+                    canMove = true;
+                    menu5.SetActive(false);
+                }
             }
             if (touchNPC3)
             {
-                Debug.Log("Npc!");
+                if (canMove == true)
+                {
+                    canMove = false;
+                    menu6.SetActive(true);
+                }
+                else
+                {
+                    canMove = true;
+                    menu6.SetActive(false);
+                }
             }
         }
     }
