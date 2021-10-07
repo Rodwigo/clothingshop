@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 9aafd2fa33734c44791c2c0fe02b832f
+guid: f5681f3a283f3cc4d98120b3de5103d0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1681911881198070210
-    second: gabe-idle-run_0
+      213: 4882302907632105754
+    second: gabe-social_0
   - first:
-      213: -861021799101455676
-    second: gabe-idle-run_1
+      213: 4246903046168759484
+    second: gabe-social_1
   - first:
-      213: -1461208576493115977
-    second: gabe-idle-run_2
+      213: -6800452536873849702
+    second: gabe-social_2
   - first:
-      213: 8044704013221318778
-    second: gabe-idle-run_3
+      213: 5254742460623187922
+    second: gabe-social_3
   - first:
-      213: 8575034355928405748
-    second: gabe-idle-run_4
+      213: 6777401933994743340
+    second: gabe-social_4
   - first:
-      213: -9054654299989250159
-    second: gabe-idle-run_5
+      213: -4493607572126027557
+    second: gabe-social_5
   - first:
-      213: 1160069886328489313
-    second: gabe-idle-run_6
+      213: -4262705728405531840
+    second: gabe-social_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -132,7 +132,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gabe-idle-run_0
+      name: gabe-social_0
       rect:
         serializedVersion: 2
         x: 0
@@ -146,14 +146,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e361ea12e06a8a8e0800000000000000
-      internalID: -1681911881198070210
+      spriteID: a19b44f70ac61c340800000000000000
+      internalID: 4882302907632105754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gabe-idle-run_1
+      name: gabe-social_1
       rect:
         serializedVersion: 2
         x: 24
@@ -167,14 +167,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c2a0b05c390d04f0800000000000000
-      internalID: -861021799101455676
+      spriteID: cbcc966c1d700fa30800000000000000
+      internalID: 4246903046168759484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gabe-idle-run_2
+      name: gabe-social_2
       rect:
         serializedVersion: 2
         x: 48
@@ -188,14 +188,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b5af5f9a8eb8bbe0800000000000000
-      internalID: -1461208576493115977
+      spriteID: a9ceab3b270ff91a0800000000000000
+      internalID: -6800452536873849702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gabe-idle-run_3
+      name: gabe-social_3
       rect:
         serializedVersion: 2
         x: 72
@@ -209,14 +209,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7057376da784af60800000000000000
-      internalID: 8044704013221318778
+      spriteID: 2df6b975d689ce840800000000000000
+      internalID: 5254742460623187922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gabe-idle-run_4
+      name: gabe-social_4
       rect:
         serializedVersion: 2
         x: 96
@@ -230,14 +230,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f612e17054a00770800000000000000
-      internalID: 8575034355928405748
+      spriteID: c265dc7962b2e0e50800000000000000
+      internalID: 6777401933994743340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gabe-idle-run_5
+      name: gabe-social_5
       rect:
         serializedVersion: 2
         x: 120
@@ -251,14 +251,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19f6d2543e7675280800000000000000
-      internalID: -9054654299989250159
+      spriteID: bd03c67a8bf73a1c0800000000000000
+      internalID: -4493607572126027557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gabe-idle-run_6
+      name: gabe-social_6
       rect:
         serializedVersion: 2
         x: 144
@@ -272,8 +272,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 165cc315a65691010800000000000000
-      internalID: 1160069886328489313
+      spriteID: 0439d5c89b3d7d4c0800000000000000
+      internalID: -4262705728405531840
       vertices: []
       indices: 
       edges: []

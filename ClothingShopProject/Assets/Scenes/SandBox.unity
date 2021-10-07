@@ -25396,6 +25396,11 @@ MonoBehaviour:
   socialBtnNPC3: {fileID: 723920432}
   casualBtnNPC3: {fileID: 763360716}
   exoticBtnNPC3: {fileID: 70789605}
+  playerAnim: {fileID: 1591005267}
+  socialClt: {fileID: 22100000, guid: a1fdd55a7251e304ea38b79c28b1ff33, type: 2}
+  casualClt: {fileID: 22100000, guid: 9bad75f1a14cd894bbf2e0a2b858c6aa, type: 2}
+  exoticClt: {fileID: 22100000, guid: 002f79d5048eaf344836fb7935f46ac9, type: 2}
+  defaulClt: {fileID: 22100000, guid: cde173ee64e774d49b03e68e93d3374a, type: 2}
 --- !u!1 &749929242
 GameObject:
   m_ObjectHideFlags: 0
@@ -26754,7 +26759,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 984084817}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 740788614}
+        m_MethodName: DefaultSkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &984084817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29427,7 +29443,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1375320243}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 740788614}
+        m_MethodName: CasualSkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1375320243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30596,7 +30634,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1425591469
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1681911881198070210, guid: 9aafd2fa33734c44791c2c0fe02b832f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -30952,7 +30990,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1641956167}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 740788614}
+        m_MethodName: ExoticSkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1641956167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31229,7 +31278,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1672728573}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 740788614}
+        m_MethodName: SocialSkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1672728573
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -24,6 +24,16 @@ public class GameController : MonoBehaviour
     public Button casualBtnNPC3;
     public Button exoticBtnNPC3;
 
+    [Header("Skins")]
+    public Animator playerAnim;
+    public AnimatorOverrideController socialClt;
+    public AnimatorOverrideController casualClt;
+    public AnimatorOverrideController exoticClt;
+    public AnimatorOverrideController defaulClt;
+    bool usingSocial = false;
+    bool usingCasual = false;
+    bool usingExotic = false;
+
     void Start()
     {
         AddCoins(50);
@@ -133,37 +143,102 @@ public class GameController : MonoBehaviour
      public void NPC1SocialSell()
     {
         SellClothes("social", 30);
+        if (usingSocial)
+        {
+            DefaultSkin();
+        }
     }
     public void NPC1CasualSell()
     {
         SellClothes("casual", 20);
+        if (usingCasual)
+        {
+            DefaultSkin();
+        }
     }
     public void NPC1ExoticSell()
     {
         SellClothes("exotic", 100);
+        if (usingExotic)
+        {
+            DefaultSkin();
+        }
     }
     public void NPC2SocialSell()
     {
         SellClothes("social", 50);
+        if (usingSocial)
+        {
+            DefaultSkin();
+        }
     }
     public void NPC2CasualSell()
     {
         SellClothes("casual", 40);
+        if (usingCasual)
+        {
+            DefaultSkin();
+        }
     }
     public void NPC2ExoticSell()
     {
         SellClothes("exotic", 10);
+        if (usingExotic)
+        {
+            DefaultSkin();
+        }
     }
     public void NPC3SocialSell()
     {
         SellClothes("social", 10);
+        if (usingSocial)
+        {
+            DefaultSkin();
+        }
     }
     public void NPC3CasualSell()
     {
         SellClothes("casual", 10);
+        if (usingCasual)
+        {
+            DefaultSkin();
+        }
     }
     public void NPC3ExoticSell()
     {
         SellClothes("exotic", 60);
+        if (usingExotic)
+        {
+            DefaultSkin();
+        }
+    }
+
+    public void CasualSkin()
+    {
+        playerAnim.runtimeAnimatorController = casualClt as RuntimeAnimatorController;
+        usingSocial = false;
+        usingCasual = true;
+        usingExotic = false;
+    }
+    public void SocialSkin()
+    {
+        playerAnim.runtimeAnimatorController = socialClt as RuntimeAnimatorController;
+        usingSocial = true;
+        usingCasual = false;
+        usingExotic = false;
+    }
+    public void ExoticSkin()
+    {
+        playerAnim.runtimeAnimatorController = exoticClt as RuntimeAnimatorController;
+        usingSocial = false;
+        usingCasual = false;
+        usingExotic = true;
+    }
+    public void DefaultSkin()
+    {
+        playerAnim.runtimeAnimatorController = defaulClt as RuntimeAnimatorController;
+        usingSocial = false;
+        usingCasual = false;
+        usingExotic = false;
     }
 }
